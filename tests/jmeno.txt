@@ -1,0 +1,185 @@
+1cff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jiri Koudelka — bug bounty hunter. XSS, SQLi, and recon tooling." />
+  <meta name="theme-color" content="#0e1116" />
+  <title>Jiri Koudelka — Bug Bounty Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark">&gt;_</span>
+        <span class="brand__name">koudythegoat</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#stats">Stats</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero__eyebrow">bug bounty hunter · security researcher</p>
+        <h1 class="hero__title">
+          Hi, I'm <span class="hero__name">Jiri Koudelka</span>.<br />
+          I find bugs. I write them up. I help fix them.
+        </h1>
+        <p class="hero__lede">
+          Self-taught young web security researcher focused on XSS and SQL injection.
+          I build small recon tools, file converter in python and report responsibly through platforms like
+          OpenBugBounty.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="https://github.com/Jirka003" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">↗</span> GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+        <div class="prose">
+          <p>
+            I pick a target, I read the code, I test at the inputs, and when
+            the vulnerability is found I write up a clear report and send it to the
+            people who can fix it. I don't exfiltrate data, I don't chase
+            clout, and I don't post anything before it's been patched. It's a
+            quiet job most and I like it that way.
+          </p>
+          <p>
+            Most of my time goes into XSS, SQL injection or even IDORs. The boring stuff
+            is where the bugs hide, and those are also the most common ones. When I'm not hunting, I work on small recon tools to make the next round of hunting a little less repetitive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Stats</h2>
+        <p class="section__subtitle">Numbers from <a href="https://www.openbugbounty.org/" target="_blank" rel="noopener noreferrer">OpenBugBounty</a>, where I report under <code>@koudythegoat</code>.</p>
+        <ul class="stats" role="list">
+          <li class="stat">
+            <span class="stat__value">65</span>
+            <span class="stat__label">Reports disclosed</span>
+          </li>
+          <li class="stat">
+            <span class="stat__value">8</span>
+            <span class="stat__label">Patched by vendors</span>
+          </li>
+          <li class="stat">
+            <span class="stat__value">100%</span>
+            <span class="stat__label">Through responsible disclosure</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORK / FEATURED -->
+    <section id="work" class="section">
+      <div class="container">
+        <h2 class="section__title">Selected work</h2>
+        <div class="cards">
+          <article class="card">
+            <header class="card__header">
+              <span class="tag">open source</span>
+              <h3 class="card__title">recon-pipeline</h3>
+            </header>
+            <p class="card__body">
+              A small, opinionated recon pipeline that chains subdomain
+              enumeration, URL discovery, and lightweight probing into one
+              repeatable flow. Built to scratch my own itch.
+            </p>
+            <footer class="card__footer">
+              <a class="card__link" href="https://github.com/Jirka003/recon-pipeline" target="_blank" rel="noopener noreferrer">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+            </footer>
+          </article>
+
+          <article class="card">
+            <header class="card__header">
+              <span class="tag">disclosure</span>
+              <h3 class="card__title">XSS on ceznet.cz</h3>
+            </header>
+            <p class="card__body">
+              Two reflected cross-site scripting vulnerabilities reported
+              against ceznet.cz, a major Czech company.
+              Reported responsibly and patched by the vendor.
+            </p>
+            <footer class="card__footer">
+              <span class="card__meta">2 reports · patched</span>
+            </footer>
+          </article>
+
+          <article class="card">
+            <header class="card__header">
+              <span class="tag">focus</span>
+              <h3 class="card__title">Favourite vulnerability classes</h3>
+            </header>
+            <ul class="card__list" role="list">
+              <li><strong>XSS</strong>. Reflected, stored, and DOM-based. The input layer is where most of the fun lives.</li>
+              <li><strong>SQL injection</strong>. Classic, but still very much alive, especially in older stacks.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__subtitle">
+          For security disclosures, collaboration, or anything else:
+        </p>
+        <ul class="contact" role="list">
+          <li class="contact__item">
+            <span class="contact__label">Email</span>
+            <a href="mailto:contact@koudythegoat.cz">contact@koudythegoat.cz</a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__label">GitHub</span>
+            <a href="https://github.com/Jirka003" target="_blank" rel="noopener noreferrer">github.com/Jirka003</a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__label">OpenBugBounty</span>
+            <a href="https://www.openbugbounty.org/" target="_blank" rel="noopener noreferrer">profile @koudythegoat</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="year"></span> Jiri Koudelka. Built by hand, no tracking.</p>
+      <p class="site-footer__meta">
+        <span class="dot" aria-hidden="true"></span>
+        open for responsible disclosure
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
+
+0
+
