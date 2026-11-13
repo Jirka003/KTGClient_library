@@ -1,6 +1,5 @@
 import json
 
-
 class Response:
     def __init__(self, raw_data: str):
         self.raw_data = raw_data

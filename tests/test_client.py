@@ -1,8 +1,9 @@
 from ktgclient import KTGClient, HelpFuncs
 
-url = "https://example.com/FUZZ"
-wordlist = ["admin", "dashboard", "nananana","Workshopy"]
+##### not really important file, so nothing interesting here yet
 
-KTGClient.ktg_fuzz(url, wordlist, exclude_size=[5])
+url = "https://example.com/path_to_manipulate"
+client = KTGClient()
 
-
+r = client.ktg_simple_403_bypasser(url, change_request_method=True)
+print(r)
